@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            🤖 My Chatbot
+            <p>Online • Ready to help</p>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="bot-message">
+                Hello! 👋 I am your chatbot. How can I help you?
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Type your message..."
+                onkeypress="handleKeyPress(event)"
+            >
+
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
